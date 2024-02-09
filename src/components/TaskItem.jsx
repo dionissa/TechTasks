@@ -24,7 +24,7 @@ export function TaskItem({ task, handleRemoveTask, handleCheckDone }) {
       <span
         className="text-slate-400 hover:text-slate-200 cursor-pointer absolute bg-red-600 rounded-md px-2 top-0 right-0"
         style={{ textDecoration: 'none' }}
-        onClick={(e) => {
+        onClick={() => {
           handleRemoveTask(task.id);
         }}
       >X</span>
