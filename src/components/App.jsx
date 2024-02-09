@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import TaskList from './TaskList';
+import { toast } from 'sonner';
 
 export function App() {
 
@@ -39,6 +40,7 @@ export function App() {
       text: query,
       isDone: false
     };
+    toast.success('Nota criada')
 
     setTaskArray(prevTaskArray => [...prevTaskArray, newTask]);
 

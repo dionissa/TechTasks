@@ -1,4 +1,4 @@
-import React from 'react';
+import { Toaster } from 'sonner';
 import TaskItem from './TaskItem';
 
 
@@ -21,6 +21,7 @@ function TaskList({ handleChangeQuery, query, taskArray, handleAddTaskToArray, h
             }
           }}
         />
+        <Toaster richColors/>
         <button onClick={handleAddTaskToArray} className="bg-slate-300 rounded-md p-1" id="submitButton">
           Adicionar
         </button>
